@@ -7,6 +7,28 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.main-container .main-img {
+ width: 400px;
+}
+
 .avatar-section {
   display: none;
 }
