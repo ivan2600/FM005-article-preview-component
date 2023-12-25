@@ -18,17 +18,62 @@ body {
   place-content: center;
   height: 100vh;
   margin: 0 auto;
+  font-family: 'Manrope', sans-serif;
+  color: var(--very-dark-grayish-blue);
+  background-color: var(--light-grayish-blue);
 }
 
 .main-container {
+  width: 920px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
+  background-color: white;
+  border-radius: 12px;
+  /* letter-spacing: 1px; */
 }
 
 .main-container .main-img {
- width: 400px;
+ width: 350px;
+ height: 345px;
+ object-fit: cover;
+}
+
+.main-container .card-text {
+  padding: 30px;
+}
+
+.main-container .card-text p {
+  color: var(--desaturated-dark-blue);
+
+}
+
+.share-section {
+  display: none;
 }
 
 .avatar-section {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr;
+  grid-column: 3 / 4;
+}
+
+.avatar-section .avatar-photo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.avatar-section .name-p {
+  font-weight: 900;
+}
+
+.avatar-section .share-button {
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.avatar-section .share-button img {
+  width: 20px;
+  object-fit: cover;
 }
