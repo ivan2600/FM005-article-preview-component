@@ -174,9 +174,27 @@ body {
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
   }
-  
+
   .card-text h2 {
     margin-bottom: 20px;
     margin-top: 0px;
   }
+
+  .share-section {
+    display: flex;
+    position: relative;
+    bottom: 100px;
+    left: 150px;
+    text-align: center;
+    width: 290px;
+    height: 70px;
+    align-items: center;
+    margin: 0 auto;
+    background-color: var(--very-dark-grayish-blue);
+    color: white;
+    font-weight: 300;
+    border-radius: 12px;
+    letter-spacing: 8px;
+  }
+  
 }
