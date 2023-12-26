@@ -25,6 +25,7 @@ body {
 
 .main-container {
   width: 920px;
+  height: 345px;
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   background-color: white;
@@ -55,12 +56,16 @@ body {
 
 }
 
+.share-avatar-container {
+  display: block;
+  position: absolute;
+}
+
 .share-section {
   display: flex;
-  position: absolute;
-  left: 800px;
-  bottom: 100
-  150px;
+  position: relative;
+  bottom: 100px;
+  left: 210px;
   text-align: center;
   width: 290px;
   height: 70px;
@@ -73,6 +78,20 @@ body {
   letter-spacing: 8px;
 }
 
+.share-section.activo {
+  display: none;
+}
+/*punta del globo*/
+.share-section::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 8px solid transparent;
+  border-top-color: var(--very-dark-grayish-blue);
+  transform: translateX(-50%);
+}
+
 .share-section p {
   margin: 0 30px;
 }
@@ -83,9 +102,16 @@ body {
 
 .avatar-section {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 7fr 1fr;
   grid-column: 3 / 4;
   padding: 0 30px;
+  bottom: 65px;
+}
+
+.avatar-section.activo {
+  position: relative;
+  top: 5px;
 }
 
 .avatar-section .avatar-photo {
