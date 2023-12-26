@@ -36,25 +36,56 @@ body {
  width: 350px;
  height: 345px;
  object-fit: cover;
+ border-top-left-radius: 12px;
+ border-bottom-left-radius: 12px;
 }
 
 .main-container .card-text {
   padding: 30px;
 }
 
+.card-text h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
 .main-container .card-text p {
   color: var(--desaturated-dark-blue);
+  font-weight: 800;
 
 }
 
 .share-section {
-  display: none;
+  display: flex;
+  position: absolute;
+  left: 800px;
+  bottom: 100
+  150px;
+  text-align: center;
+  width: 290px;
+  height: 70px;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--very-dark-grayish-blue);
+  color: white;
+  font-weight: 300;
+  border-radius: 12px;
+  letter-spacing: 8px;
+}
+
+.share-section p {
+  margin: 0 30px;
+}
+
+.share-section a {
+  margin: 0 5px;
 }
 
 .avatar-section {
   display: grid;
   grid-template-columns: 1fr 7fr 1fr;
   grid-column: 3 / 4;
+  padding: 0 30px;
 }
 
 .avatar-section .avatar-photo {
@@ -66,7 +97,12 @@ body {
   font-weight: 900;
 }
 
+.avatar-section .date-p {
+  color: var(--grayish-blue);
+}
+
 .avatar-section .share-button {
+  position: relative;
   border: none;
   border-radius: 50%;
   height: 40px;
